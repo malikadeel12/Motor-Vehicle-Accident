@@ -2,7 +2,9 @@ import "@/App.css";
 import Nav from "@/components/landing/Nav";
 import Hero from "@/components/landing/Hero";
 import HandleEverything from "@/components/landing/HandleEverything";
+import AccidentTypes from "@/components/landing/AccidentTypes";
 import Results from "@/components/landing/Results";
+import Damages from "@/components/landing/Damages";
 import Journey from "@/components/landing/Journey";
 import Testimonials from "@/components/landing/Testimonials";
 import FinalPush from "@/components/landing/FinalPush";
@@ -15,7 +17,9 @@ function App() {
       <main>
         <Hero />
         <HandleEverything />
+        <AccidentTypes />
         <Results />
+        <Damages />
         <Journey />
         <Testimonials />
         <FinalPush />
