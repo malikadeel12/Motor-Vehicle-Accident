@@ -29,11 +29,10 @@ export default function Results() {
           transition={{ duration: 0.9 }}
           className="max-w-3xl"
         >
-          <p className="text-[#d4af37] uppercase tracking-[0.35em] text-xs mb-6">The proof</p>
           <h2 className="font-display font-bold uppercase leading-[0.95] tracking-tight text-4xl sm:text-5xl lg:text-6xl">
             Real Results.
             <br />
-            Real People.
+            <span className="font-hand normal-case font-normal text-[#d4af37] tracking-normal">Real people.</span>
           </h2>
           <p className="mt-6 text-lg text-[#a89f95] leading-relaxed">
             These aren't numbers on a wall. They're mortgages saved, surgeries

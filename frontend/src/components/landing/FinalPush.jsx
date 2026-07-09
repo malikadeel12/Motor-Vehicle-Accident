@@ -13,7 +13,7 @@ export default function FinalPush() {
           transition={{ duration: 0.9 }}
           className="lg:col-span-6"
         >
-          <p className="text-[#b31b1b] uppercase tracking-[0.35em] text-xs mb-6">Time matters</p>
+          <p className="font-hand text-[#b31b1b] text-2xl mb-6">every day you wait, they win.</p>
           <h2
             data-testid="final-push-headline"
             className="font-display font-bold uppercase leading-[0.95] tracking-tight text-4xl sm:text-5xl lg:text-7xl"

@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="font-display text-3xl font-semibold uppercase tracking-tight">
               Meridian<span className="text-[#b31b1b]">&amp;</span>Rowe
             </div>
-            <p className="mt-3 text-[#a89f95]">We're here when you need us.</p>
+            <p className="mt-3 font-hand text-xl text-[#a89f95]">We're here when you need us.</p>
           </div>
           <a
             href="tel:5551234567"

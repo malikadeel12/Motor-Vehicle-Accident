@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -34,6 +34,27 @@ body {
 
 .font-display {
     font-family: 'Oswald', sans-serif;
+}
+
+.font-hand {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+}
+
+.underline-rough {
+    position: relative;
+    display: inline-block;
+}
+.underline-rough::after {
+    content: "";
+    position: absolute;
+    left: -2%;
+    right: -3%;
+    bottom: 0.02em;
+    height: 0.09em;
+    background: var(--brake-red);
+    transform: rotate(-1.2deg);
+    border-radius: 2px;
 }
 
 .grain::after {

@@ -41,15 +41,15 @@ export default function Hero() {
           <br />
           <span className="text-[#a89f95]">We Focus on</span>
           <br />
-          <span className="text-[#b31b1b]">Winning.</span>
+          <span className="text-[#b31b1b] underline-rough">Winning.</span>
         </motion.h1>
 
         <motion.p
           variants={fadeUp} initial="hidden" animate="show" custom={2}
           className="mt-10 text-lg md:text-xl text-[#cfc5ba] max-w-xl leading-relaxed"
         >
-          If you've been injured, you shouldn't fight alone. Free consultation.
-          No fee unless we win.
+          If you've been injured, you shouldn't fight alone. Free consultation.{" "}
+          <span className="font-hand text-[#d4af37] text-xl md:text-2xl">No fee unless we win.</span>
         </motion.p>
 
         <motion.div

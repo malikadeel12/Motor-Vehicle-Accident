@@ -20,21 +20,22 @@ export default function HandleEverything() {
           variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
           className="lg:col-span-5"
         >
-          <p className="text-[#b31b1b] uppercase tracking-[0.35em] text-xs mb-6">Right now, it's chaos</p>
+          <p className="font-hand text-[#b31b1b] text-2xl mb-6">right now, it's chaos —</p>
           <h2 className="font-display font-bold uppercase leading-[0.95] tracking-tight text-4xl sm:text-5xl lg:text-6xl">
             We Handle
             <br />
             Everything.
           </h2>
-          <div className="mt-10 space-y-5">
+          <div className="mt-12 space-y-6">
             {chaos.map((line, i) => (
               <motion.p
                 key={i}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -20, rotate: 0 }}
+                whileInView={{ opacity: 1, x: 0, rotate: [-0.8, 0.6, -0.5, 0.9][i] }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: i * 0.12 }}
-                className="text-[#a89f95] text-lg leading-relaxed border-l-2 border-[#b31b1b]/40 pl-5"
+                style={{ marginLeft: `${[0, 24, 8, 32][i]}px` }}
+                className="text-[#a89f95] text-lg leading-relaxed bg-[#1a1516] border border-white/5 px-5 py-4 max-w-md shadow-lg"
               >
                 {line}
               </motion.p>
@@ -55,7 +56,7 @@ export default function HandleEverything() {
             </p>
             <p className="mt-8 text-lg text-[#a89f95] leading-relaxed">
               You focus on healing. We handle the rest. Every letter, every
-              adjuster, every deadline. That's the whole point of us.
+              adjuster, every deadline. <span className="font-hand text-[#d4af37] text-xl">That's the whole point of us.</span>
             </p>
           </div>
         </motion.div>
