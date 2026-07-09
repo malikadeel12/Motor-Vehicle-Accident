@@ -5,17 +5,17 @@ const steps = [
   {
     icon: PhoneCall,
     title: "The Call",
-    text: "You tell us what happened. We listen. All of it — the crash, the fear, the 2 AM worries. No charge. No pressure. No judgment.",
+    text: "You tell us what happened. We listen. All of it. The crash, the fear, the 2 AM worries. No charge. No pressure. No judgment.",
   },
   {
     icon: Flame,
     title: "The Fight",
-    text: "We take over every conversation with the insurance company. They stop calling you. We build your case like it's going to trial — because they need to believe it will.",
+    text: "We take over every conversation with the insurance company. They stop calling you. We build your case like it's going to trial, because they need to believe it will.",
   },
   {
     icon: Trophy,
     title: "The Win",
-    text: "You get what your life is actually worth — not what an adjuster hoped you'd settle for. And you never pay us a cent unless we win.",
+    text: "You get what your life is actually worth, not what an adjuster hoped you'd settle for. And you never pay us a cent unless we win.",
   },
 ];
 

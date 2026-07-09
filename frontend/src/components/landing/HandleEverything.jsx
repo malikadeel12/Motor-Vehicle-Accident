@@ -20,7 +20,7 @@ export default function HandleEverything() {
           variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}
           className="lg:col-span-5"
         >
-          <p className="font-hand text-[#b31b1b] text-2xl mb-6">right now, it's chaos —</p>
+          <p className="font-hand text-[#b31b1b] text-2xl mb-6">right now, it's chaos...</p>
           <h2 className="font-display font-bold uppercase leading-[0.95] tracking-tight text-4xl sm:text-5xl lg:text-6xl">
             We Handle
             <br />
@@ -51,7 +51,7 @@ export default function HandleEverything() {
             <div className="absolute -top-px left-0 w-24 h-px bg-[#d4af37]" />
             <p className="text-[#d4af37] uppercase tracking-[0.35em] text-xs mb-6">Then, quiet</p>
             <p className="text-2xl lg:text-3xl leading-snug text-[#f5ebe1] font-light">
-              The calls stop coming to you — they come to us. The bills get
+              The calls stop coming to you. They come to us. The bills get
               handled. The paperwork disappears from your table.
             </p>
             <p className="mt-8 text-lg text-[#a89f95] leading-relaxed">

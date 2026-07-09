@@ -7,7 +7,7 @@ const quotes = [
     detail: "T-boned at an intersection, 2023",
   },
   {
-    quote: "I was terrified. They held my hand through everything — every call, every hearing, every sleepless night.",
+    quote: "I was terrified. They held my hand through everything. Every call, every hearing, every sleepless night.",
     name: "James R.",
     detail: "Hit by a drunk driver, 2024",
   },

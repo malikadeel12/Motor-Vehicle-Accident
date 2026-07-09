@@ -4,9 +4,9 @@ import { ArrowUpRight } from "lucide-react";
 const types = [
   { name: "Personal Auto", note: "The everyday drive that changed everything." },
   { name: "Commercial Trucks", note: "Big rigs come with big legal teams. Now, so do you." },
-  { name: "Rideshare", note: "Uber, Lyft — their insurance maze is our home turf." },
+  { name: "Rideshare", note: "Uber, Lyft. Their insurance maze is our home turf." },
   { name: "Motorcycle", note: "The bias against riders is real. We shut it down." },
-  { name: "Bus", note: "Public or private — someone is accountable." },
+  { name: "Bus", note: "Public or private, someone is accountable." },
   { name: "Bicycle", note: "You had every right to that road." },
   { name: "Pedestrian", note: "You were walking. They were driving. Enough said." },
   { name: "Train", note: "Rare. Complex. Devastating. We've been there." },
@@ -23,7 +23,7 @@ export default function AccidentTypes() {
           transition={{ duration: 0.9 }}
           className="max-w-2xl"
         >
-          <p className="font-hand text-[#d4af37] text-2xl mb-6">car, truck, bike — doesn't matter.</p>
+          <p className="font-hand text-[#d4af37] text-2xl mb-6">car, truck, bike. it doesn't matter.</p>
           <h2 className="font-display font-bold uppercase leading-[0.95] tracking-tight text-4xl sm:text-5xl lg:text-6xl">
             No Matter the Crash,
             <br />

@@ -30,7 +30,7 @@ export default function CaseForm() {
               We've got it from here.
             </h3>
             <p className="mt-4 text-[#a89f95] text-lg leading-relaxed max-w-md mx-auto">
-              A real person — not a robot — will call you within the hour.
+              A real person, not a robot, will call you within the hour.
               Take a breath. <span className="font-hand text-[#d4af37] text-xl">You did the hard part.</span>
             </p>
           </motion.div>

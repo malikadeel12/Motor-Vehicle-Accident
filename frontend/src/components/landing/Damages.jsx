@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 const damages = [
   {
     title: "Medical Bills",
-    text: "The ER, the surgeries, the months of physical therapy — every bill lands on our desk, not your kitchen table.",
+    text: "The ER, the surgeries, the months of physical therapy. Every bill lands on our desk, not your kitchen table.",
   },
   {
     title: "Lost Wages",
-    text: "Every paycheck you've missed — and the ones you're going to miss — counts toward what they owe you.",
+    text: "Every paycheck you've missed, and the ones you're going to miss, counts toward what they owe you.",
   },
   {
     title: "Pain & Suffering",
@@ -19,7 +19,7 @@ const damages = [
   },
   {
     title: "Property Damage",
-    text: "Your car's real value — not the lowball number an adjuster read off a screen.",
+    text: "Your car's real value, not the lowball number an adjuster read off a screen.",
   },
   {
     title: "Emotional Distress",
@@ -38,14 +38,14 @@ export default function Damages() {
           transition={{ duration: 0.9 }}
           className="lg:ml-auto lg:max-w-2xl lg:text-right"
         >
-          <p className="font-hand text-[#d4af37] text-2xl mb-6">every dollar they owe you —</p>
+          <p className="font-hand text-[#d4af37] text-2xl mb-6">every dollar they owe you.</p>
           <h2 className="font-display font-bold uppercase leading-[0.95] tracking-tight text-4xl sm:text-5xl lg:text-6xl">
             What We Fight
             <br />
             to Recover.
           </h2>
           <p className="mt-6 text-lg text-[#a89f95] leading-relaxed">
-            A crash costs more than a repair bill. We add up all of it — then we
+            A crash costs more than a repair bill. We add up all of it. Then we
             go get it.
           </p>
         </motion.div>
