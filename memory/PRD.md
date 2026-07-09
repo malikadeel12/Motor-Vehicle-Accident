@@ -33,7 +33,7 @@ Create a website for "Motor Vehicle Accidents" — a personal injury law firm he
 - De-AI polish pass: Instrument Serif accents, scattered-paper chaos cards, editorial testimonials, ghost numbers
 - AccidentTypes section (8 crash types, editorial type-list) + Damages section (6 recoverables, asymmetric layout)
 - SEO meta tags, OG/Twitter cards, LegalService JSON-LD, MR monogram favicon set
-- /estimate case-value calculator: 6-question quiz funnel (react-router route), progress bar, social-proof toast, tip lines, contact gate (name+phone), client-side calcEstimate() reveals gold dollar range. Frontend-only, no persistence. Entry points: EstimateBanner section + footer link.
+- /estimate case-value calculator — ADDED then fully REMOVED at user's request (banner, page, route, footer link all deleted)
 
 ## Backlog / Next Tasks
 - P1: Persist form leads to backend + simple admin view (if user upgrades from frontend-only)

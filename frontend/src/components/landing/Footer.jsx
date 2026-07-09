@@ -21,7 +21,6 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between gap-6 text-sm text-[#a89f95]/70">
           <div className="flex gap-8">
             <a href="#case-review" className="hover:text-[#f5ebe1] transition-colors" data-testid="footer-link-review">Free Case Review</a>
-            <a href="/estimate" className="hover:text-[#f5ebe1] transition-colors" data-testid="footer-link-estimate">Case Value Calculator</a>
             <a href="tel:5551234567" className="hover:text-[#f5ebe1] transition-colors" data-testid="footer-link-call">Call 24/7</a>
           </div>
           <p>© 2026 Meridian &amp; Rowe Trial Lawyers</p>
