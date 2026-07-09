@@ -35,7 +35,7 @@ Create a website for "Motor Vehicle Accidents" — a personal injury law firm he
 - SEO meta tags, OG/Twitter cards, LegalService JSON-LD, MR monogram favicon set
 - /estimate case-value calculator — ADDED then fully REMOVED at user's request (banner, page, route, footer link all deleted)
 - "Made with Emergent" badge removed (MutationObserver in index.html)
-- FinalPush section + form moved OFF the landing page to dedicated /free-case-review route (react-router). All "Get Your Free Case Review" CTAs (hero, nav, footer) navigate there. Form expanded to 5 fields: name, phone, email, ZIP (5-digit), state (50-state select). Still frontend-only.
+- FinalPush section + form moved OFF the landing page to dedicated /free-case-review route — then REVERTED per client: separate page deleted, form (name/phone/email/ZIP/state) now lives directly in the HERO (headline left, form right, above the fold). Nav/footer CTAs smooth-scroll to #case-review in hero. FinalPush.jsx deleted. No router needed.
 
 ## Backlog / Next Tasks
 - P1: Persist form leads to backend + simple admin view (if user upgrades from frontend-only)
