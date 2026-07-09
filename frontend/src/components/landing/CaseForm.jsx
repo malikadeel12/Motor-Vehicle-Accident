@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HeartHandshake } from "lucide-react";
 
+const STATES = ["AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"];
+
 export default function CaseForm() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -61,12 +63,36 @@ export default function CaseForm() {
               placeholder="Phone number"
               className="w-full bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors"
             />
-            <textarea
-              data-testid="form-message-input"
-              rows={3}
-              placeholder="What happened? (in your own words — no legal talk needed)"
-              className="w-full bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors resize-none"
+            <input
+              required
+              data-testid="form-email-input"
+              type="email"
+              placeholder="Email address"
+              className="w-full bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors"
             />
+            <div className="flex gap-6">
+              <input
+                required
+                data-testid="form-zip-input"
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9]{5}"
+                maxLength={5}
+                placeholder="ZIP code"
+                className="w-1/2 bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors"
+              />
+              <select
+                required
+                defaultValue=""
+                data-testid="form-state-select"
+                className="w-1/2 bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] transition-colors [&>option]:bg-[#1e191a]"
+              >
+                <option value="" disabled className="text-[#a89f95]">State</option>
+                {STATES.map((s) => (
+                  <option key={s} value={s}>{s}</option>
+                ))}
+              </select>
+            </div>
             <button
               type="submit"
               data-testid="form-submit-button"

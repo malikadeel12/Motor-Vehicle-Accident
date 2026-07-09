@@ -1,8 +1,5 @@
+import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
-
-export const scrollToForm = () => {
-  document.getElementById("case-review")?.scrollIntoView({ behavior: "smooth" });
-};
 
 export default function Nav() {
   return (
@@ -30,13 +27,13 @@ export default function Nav() {
               (555) 123-4567
             </span>
           </a>
-          <button
-            onClick={scrollToForm}
+          <Link
+            to="/free-case-review"
             data-testid="nav-cta-button"
             className="hidden md:block bg-[#b31b1b] hover:bg-[#8a1515] text-[#f5ebe1] font-display uppercase tracking-wider text-sm px-6 py-3 transition-colors"
           >
             Free Case Review
-          </button>
+          </Link>
         </div>
       </div>
     </header>

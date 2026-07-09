@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Star, Phone } from "lucide-react";
-import { scrollToForm } from "./Nav";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -56,13 +56,13 @@ export default function Hero() {
           variants={fadeUp} initial="hidden" animate="show" custom={3}
           className="mt-12 flex flex-col sm:flex-row sm:items-center gap-6"
         >
-          <button
-            onClick={scrollToForm}
+          <Link
+            to="/free-case-review"
             data-testid="hero-cta-button"
-            className="bg-[#b31b1b] hover:bg-[#8a1515] text-[#f5ebe1] font-display uppercase tracking-wider text-lg px-10 py-5 transition-all shadow-[0_0_40px_rgba(179,27,27,0.35)] hover:shadow-[0_0_60px_rgba(179,27,27,0.5)]"
+            className="inline-block text-center bg-[#b31b1b] hover:bg-[#8a1515] text-[#f5ebe1] font-display uppercase tracking-wider text-lg px-10 py-5 transition-all shadow-[0_0_40px_rgba(179,27,27,0.35)] hover:shadow-[0_0_60px_rgba(179,27,27,0.5)]"
           >
             Get Your Free Case Review
-          </button>
+          </Link>
           <a
             href="tel:5551234567"
             data-testid="hero-phone-link"
