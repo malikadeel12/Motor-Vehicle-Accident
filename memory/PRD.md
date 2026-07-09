@@ -27,6 +27,13 @@ Create a website for "Motor Vehicle Accidents" — a personal injury law firm he
 
 ## Testing
 - iteration_1.json: frontend 100% pass (hero, nav, scroll CTAs, all sections, form submit + validation, mobile 390px, no console errors)
+- iteration_2.json: /estimate calculator 100% pass (all 6 questions, multi-select gating, contact gate, result ranges, banner/footer navigation, mobile, regression clean)
+
+## Later Additions
+- De-AI polish pass: Instrument Serif accents, scattered-paper chaos cards, editorial testimonials, ghost numbers
+- AccidentTypes section (8 crash types, editorial type-list) + Damages section (6 recoverables, asymmetric layout)
+- SEO meta tags, OG/Twitter cards, LegalService JSON-LD, MR monogram favicon set
+- /estimate case-value calculator: 6-question quiz funnel (react-router route), progress bar, social-proof toast, tip lines, contact gate (name+phone), client-side calcEstimate() reveals gold dollar range. Frontend-only, no persistence. Entry points: EstimateBanner section + footer link.
 
 ## Backlog / Next Tasks
 - P1: Persist form leads to backend + simple admin view (if user upgrades from frontend-only)
