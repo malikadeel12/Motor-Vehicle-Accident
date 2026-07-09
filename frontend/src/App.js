@@ -18,11 +18,11 @@ const Landing = () => (
     <Nav />
     <main>
       <Hero />
+      <EstimateBanner />
       <HandleEverything />
       <AccidentTypes />
       <Results />
       <Damages />
-      <EstimateBanner />
       <Journey />
       <Testimonials />
       <FinalPush />
