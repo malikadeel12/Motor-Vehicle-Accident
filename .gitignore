@@ -2,7 +2,6 @@
 /*
 !/frontend
 !/.gitignore
-!/README.md
 
 # Inside frontend: ignore dependencies, builds, env and logs
 frontend/node_modules/
