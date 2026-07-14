@@ -1,4 +1,5 @@
 import { Phone } from "lucide-react";
+import Logo from "../Logo";
 
 const scrollToForm = () => {
   document.getElementById("case-review")?.scrollIntoView({ behavior: "smooth" });
@@ -12,11 +13,7 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         <a href="/" data-testid="nav-logo" className="flex items-center gap-2">
-          <img 
-            src="/logo.png" 
-            alt="Accident Win Case" 
-            className="h-16 w-auto"
-          />
+          <Logo className="h-16" />
         </a>
         <div className="flex items-center gap-4 sm:gap-8">
           <a
