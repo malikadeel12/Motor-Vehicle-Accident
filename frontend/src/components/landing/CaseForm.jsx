@@ -49,16 +49,26 @@ export default function CaseForm() {
             <p className="text-[#a89f95] text-sm">
               Free. Confidential. No fee unless we win.
             </p>
-            <input
-              required
-              data-testid="form-name-input"
-              type="text"
-              placeholder="Your name"
-              className="w-full bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors"
-            />
+            <div className="flex gap-6">
+              <input
+                required
+                data-testid="form-name-input"
+                type="text"
+                placeholder="First name"
+                className="w-1/2 bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors"
+              />
+              <input
+                required
+                data-testid="form-name-input"
+                type="text"
+                placeholder="Last name"
+                className="w-1/2 bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors"
+              />
+            </div>
             <input
               required
               data-testid="form-phone-input"
+              data-tf-sensitive="true"
               type="tel"
               placeholder="Phone number"
               className="w-full bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors"
@@ -66,6 +76,7 @@ export default function CaseForm() {
             <input
               required
               data-testid="form-email-input"
+              data-tf-sensitive="true"
               type="email"
               placeholder="Email address"
               className="w-full bg-transparent border-b border-white/15 focus:border-[#d4af37] outline-none py-3 text-[#f5ebe1] placeholder-[#a89f95]/60 transition-colors"
@@ -100,6 +111,10 @@ export default function CaseForm() {
             >
               Get Help Now
             </button>
+            <input type="hidden" id="xxTrustedFormCertUrl" name="xxTrustedFormCertUrl" value="" />
+            <p data-tf-consent="true" className="text-[#a89f95] text-xs leading-relaxed">
+              By clicking "Get Help Now", I agree to the Terms of Service and Privacy Policy, and authorize AccidentCaseWin to contact me via phone or text.
+            </p>
           </motion.form>
         )}
       </AnimatePresence>

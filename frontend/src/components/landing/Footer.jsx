@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-8 text-xs leading-relaxed text-[#a89f95]/40 max-w-3xl">
-          Disclaimer: This website is for informational purposes only and does not constitute legal advice. Accessing this site or contacting us does not establish an attorney-client relationship. Prior results or case outcomes do not guarantee a similar result. Accident Case Win is a fictional law firm used solely for demonstration and illustrative purposes.
+          Attorney advertising. This website is for informational purposes only and does not constitute legal advice. Prior results do not guarantee a similar outcome. Contacting us does not create an attorney–client relationship. Accident Case Win is a fictional firm shown for demonstration purposes.
         </p>
       </div>
     </footer>
