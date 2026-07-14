@@ -12,7 +12,7 @@ const quotes = [
     detail: "Hit by a drunk driver, 2024",
   },
   {
-    quote: "The insurance company treated me like a case number. Meridian & Rowe treated me like family.",
+    quote: "The insurance company treated me like a case number. Accident Win Case treated me like family.",
     name: "Denise W.",
     detail: "Highway pile-up, 2023",
   },
