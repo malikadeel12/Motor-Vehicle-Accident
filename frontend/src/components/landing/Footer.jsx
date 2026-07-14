@@ -1,14 +1,12 @@
+import Logo from "../Logo";
+
 export default function Footer() {
   return (
     <footer data-testid="main-footer" className="bg-[#0c0a0b] border-t border-white/5 py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12">
           <div>
-            <img 
-              src="/logo.png" 
-              alt="Accident Win Case" 
-              className="h-24 w-auto"
-            />
+            <Logo className="h-24" />
             <p className="mt-3 font-hand text-xl text-[#a89f95]">We're here when you need us.</p>
           </div>
           <a
