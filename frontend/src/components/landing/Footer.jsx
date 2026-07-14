@@ -23,14 +23,11 @@ export default function Footer() {
             <a href="#case-review" className="hover:text-[#f5ebe1] transition-colors" data-testid="footer-link-review">Free Case Review</a>
             <a href="tel:5551234567" className="hover:text-[#f5ebe1] transition-colors" data-testid="footer-link-call">Call 24/7</a>
           </div>
-          <p>© 2026 Accident Win Case</p>
+          <p>© 2026 Accident Case Win</p>
         </div>
 
         <p className="mt-8 text-xs leading-relaxed text-[#a89f95]/40 max-w-3xl">
-          Attorney advertising. This website is for informational purposes only and does not
-          constitute legal advice. Prior results do not guarantee a similar outcome. Contacting
-          us does not create an attorney–client relationship. Accident Win Case is a fictional
-          firm shown for demonstration purposes.
+          Disclaimer: This website is for informational purposes only and does not constitute legal advice. Accessing this site or contacting us does not establish an attorney-client relationship. Prior results or case outcomes do not guarantee a similar result. Accident Case Win is a fictional law firm used solely for demonstration and illustrative purposes.
         </p>
       </div>
     </footer>
