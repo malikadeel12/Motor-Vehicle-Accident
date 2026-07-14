@@ -11,13 +11,12 @@ export default function Nav() {
       className="fixed top-0 left-0 right-0 z-50 bg-[#161314]/80 backdrop-blur-xl border-b border-white/5"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-        <a href="/" data-testid="nav-logo" className="flex items-baseline gap-2">
-          <span className="font-display text-2xl font-semibold uppercase tracking-tight text-[#f5ebe1]">
-            Meridian<span className="text-[#b31b1b]">&amp;</span>Rowe
-          </span>
-          <span className="hidden sm:block text-[10px] uppercase tracking-[0.3em] text-[#a89f95]">
-            Trial Lawyers
-          </span>
+        <a href="/" data-testid="nav-logo" className="flex items-center gap-2">
+          <img 
+            src="/logo.png" 
+            alt="Accident Win Case" 
+            className="h-16 w-auto"
+          />
         </a>
         <div className="flex items-center gap-4 sm:gap-8">
           <a
