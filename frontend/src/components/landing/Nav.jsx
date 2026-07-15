@@ -17,13 +17,13 @@ export default function Nav() {
         </a>
         <div className="flex items-center gap-4 sm:gap-8">
           <a
-            href="tel:5551234567"
+            href="tel:+17139197830"
             data-testid="nav-phone-link"
             className="flex items-center gap-2 text-[#d4af37] hover:text-[#e8c959] transition-colors"
           >
             <Phone size={16} strokeWidth={2.5} />
             <span className="font-display font-medium tracking-wide text-sm sm:text-base">
-              (555) 123-4567
+              (713) 919-7830
             </span>
           </a>
           <button

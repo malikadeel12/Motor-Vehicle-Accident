@@ -55,14 +55,14 @@ export default function Hero() {
 
           <motion.a
             variants={fadeUp} initial="hidden" animate="show" custom={3}
-            href="tel:5551234567"
+            href="tel:+17139197830"
             data-testid="hero-phone-link"
             className="mt-10 inline-flex items-center gap-3 text-[#d4af37] hover:text-[#e8c959] transition-colors"
           >
             <Phone size={22} strokeWidth={2.5} />
             <div className="text-left">
               <div className="text-xs uppercase tracking-[0.25em] text-[#a89f95]">Call 24/7</div>
-              <div className="font-display text-2xl font-medium tracking-wide">(555) 123-4567</div>
+              <div className="font-display text-2xl font-medium tracking-wide">(713) 919-7830</div>
             </div>
           </motion.a>
 

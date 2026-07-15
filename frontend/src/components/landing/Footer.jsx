@@ -10,18 +10,18 @@ export default function Footer() {
             <p className="mt-3 font-hand text-xl text-[#a89f95]">We're here when you need us.</p>
           </div>
           <a
-            href="tel:5551234567"
+            href="tel:+17139197830"
             data-testid="footer-phone-link"
             className="font-display font-bold text-4xl sm:text-5xl text-[#d4af37] hover:text-[#e8c959] transition-colors tracking-tight"
           >
-            (555) 123-4567
+            (713) 919-7830
           </a>
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between gap-6 text-sm text-[#a89f95]/70">
           <div className="flex gap-8">
             <a href="#case-review" className="hover:text-[#f5ebe1] transition-colors" data-testid="footer-link-review">Free Case Review</a>
-            <a href="tel:5551234567" className="hover:text-[#f5ebe1] transition-colors" data-testid="footer-link-call">Call 24/7</a>
+            <a href="tel:+17139197830" className="hover:text-[#f5ebe1] transition-colors" data-testid="footer-link-call">Call 24/7</a>
           </div>
           <p>© 2026 Accident Case Win</p>
         </div>
