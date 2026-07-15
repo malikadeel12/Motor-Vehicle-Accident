@@ -58,6 +58,9 @@ module.exports = async function handler(req, res) {
     pageUrl: str(body.pageUrl),
   };
 
+  console.log("[lead] Received payload:", { ...lead, trustedFormCertUrl: lead.trustedFormCertUrl ? "SET" : "EMPTY" });
+  console.log("[lead] Full cert URL:", lead.trustedFormCertUrl);
+
   if (!lead.firstName || !lead.lastName || !lead.phone || !lead.email || !lead.zip || !lead.state) {
     return res.status(400).json({ error: "Missing required fields." });
   }
@@ -123,8 +126,10 @@ module.exports = async function handler(req, res) {
   const claim = { attempted: false };
   if (TRUSTEDFORM_API_KEY && lead.trustedFormCertUrl && isTrustedFormUrl(lead.trustedFormCertUrl)) {
     claim.attempted = true;
+    claim.certUrl = lead.trustedFormCertUrl;
     try {
       const auth = Buffer.from(`API:${TRUSTEDFORM_API_KEY}`).toString("base64");
+      console.log("[lead] Claiming TrustedForm cert:", lead.trustedFormCertUrl);
       const tfRes = await fetch(lead.trustedFormCertUrl, {
         method: "POST",
         headers: {
@@ -148,6 +153,7 @@ module.exports = async function handler(req, res) {
       claim.ok = tfRes.ok;
       const tfData = await tfRes.json().catch(() => ({}));
       claim.outcome = tfData && tfData.outcome ? tfData.outcome : undefined;
+      console.log("[lead] TrustedForm claim result:", { status: tfRes.status, ok: tfRes.ok, outcome: claim.outcome, response: tfData });
 
       // Record the outcome back on the lead row (best-effort).
       if (leadId) {
@@ -167,7 +173,12 @@ module.exports = async function handler(req, res) {
     } catch (err) {
       console.error("[lead] TrustedForm claim error:", err);
       claim.ok = false;
+      claim.error = String(err);
     }
+  } else {
+    if (!TRUSTEDFORM_API_KEY) console.warn("[lead] TRUSTEDFORM_API_KEY not set");
+    if (!lead.trustedFormCertUrl) console.warn("[lead] No trustedFormCertUrl in payload");
+    if (lead.trustedFormCertUrl && !isTrustedFormUrl(lead.trustedFormCertUrl)) console.warn("[lead] Invalid cert URL:", lead.trustedFormCertUrl);
   }
 
   return res.status(200).json({ ok: true, id: leadId, claim });

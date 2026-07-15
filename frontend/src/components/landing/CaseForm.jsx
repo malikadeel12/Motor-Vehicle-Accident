@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HeartHandshake, Loader2 } from "lucide-react";
 
@@ -48,6 +48,9 @@ export default function CaseForm() {
       pageUrl: typeof window !== "undefined" ? window.location.href : "",
       company: get("company"), // honeypot — real users leave this empty
     };
+
+    console.log("[CaseForm] Submitting payload:", { ...payload, trustedFormCertUrl: payload.trustedFormCertUrl ? "SET" : "EMPTY" });
+    console.log("[CaseForm] Full cert URL:", payload.trustedFormCertUrl);
 
     setStatus("submitting");
     setErrorMsg("");
