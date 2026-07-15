@@ -32,7 +32,7 @@ function PublicLayout() {
 }
 
 function ProtectedRoute({ children }) {
-  const isAuth = localStorage.getItem("admin_auth") === "true";
+  const isAuth = localStorage.getItem("admin_token") === "authenticated";
   return isAuth ? children : <Navigate to="/admin/login" replace />;
 }
 
