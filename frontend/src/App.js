@@ -11,6 +11,7 @@ import Testimonials from "@/components/landing/Testimonials";
 import Footer from "@/components/landing/Footer";
 import AdminLogin from "@/components/admin/AdminLogin";
 import AdminDashboard from "@/components/admin/AdminDashboard";
+import { AdminAuthProvider } from "@/components/admin/AdminAuth";
 
 function PublicLayout() {
   return (
@@ -37,20 +38,22 @@ function ProtectedRoute({ children }) {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<PublicLayout />} />
-        <Route path="/admin/login" element={<AdminLogin />} />
-        <Route
-          path="/admin/*"
-          element={
-            <ProtectedRoute>
-              <AdminDashboard />
-            </ProtectedRoute>
-          }
-        />
-      </Routes>
-    </BrowserRouter>
+    <AdminAuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PublicLayout />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route
+            path="/admin/*"
+            element={
+              <ProtectedRoute>
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+    </AdminAuthProvider>
   );
 }
 
