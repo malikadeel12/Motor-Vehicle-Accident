@@ -238,6 +238,7 @@ function AdminDashboardContent() {
                         <th className="p-4 font-medium hidden lg:table-cell">Location</th>
                         <th className="p-4 font-medium">TrustedForm</th>
                         <th className="p-4 font-medium">Status</th>
+                        <th className="p-4 font-medium hidden xl:table-cell">IP</th>
                         <th className="p-4 font-medium">Date</th>
                         <th className="p-4 font-medium w-16"></th>
                       </tr>
@@ -283,6 +284,9 @@ function AdminDashboardContent() {
                             <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium border ${CLAIM_STATUS_COLORS[lead.claim_status] || CLAIM_STATUS_COLORS.unknown}`}>
                               {lead.claim_status || "unknown"}
                             </span>
+                          </td>
+                          <td className="p-4 text-xs font-mono text-[#a89f95]/70 hidden xl:table-cell">
+                            {lead.ip || "-"}
                           </td>
                           <td className="p-4 text-xs text-[#a89f95] hidden sm:table-cell">
                             {formatDate(lead.created_at)}
@@ -396,6 +400,10 @@ function AdminDashboardContent() {
                   <div className="text-xs text-[#a89f95]/70 uppercase tracking-wider mb-1">Created</div>
                   <div className="text-[#f5ebe1]">{formatDate(selectedLead.created_at)}</div>
                 </div>
+                <div>
+                  <div className="text-xs text-[#a89f95]/70 uppercase tracking-wider mb-1">IP Address</div>
+                  <div className="text-[#f5ebe1] font-mono text-xs">{selectedLead.ip || "-"}</div>
+                </div>
               </div>
 
               <div className="border-t border-white/5 pt-4">
@@ -420,6 +428,15 @@ function AdminDashboardContent() {
                 <pre className="bg-[#161314] p-4 rounded text-xs text-[#a89f95] overflow-auto max-h-48">
                   {selectedLead.claim_response ? JSON.stringify(selectedLead.claim_response, null, 2) : "No response data"}
                 </pre>
+              </div>
+
+              <div className="border-t border-white/5 pt-4 flex justify-end">
+                <button
+                  onClick={() => setSelectedLead(null)}
+                  className="px-4 py-2 bg-[#b31b1b] hover:bg-[#8a1515] text-[#f5ebe1] font-display uppercase tracking-wider text-sm transition-all rounded"
+                >
+                  Close
+                </button>
               </div>
             </div>
           </div>
